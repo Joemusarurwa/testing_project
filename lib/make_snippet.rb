@@ -1,3 +1,5 @@
 def make_snippet(string)
-  # return "she sells sea shells on..."
+  return string.split.size
+  word_count = string.split.size
+
 end
