@@ -1,3 +1,3 @@
 def make_snippet(string)
-  return string.length
+  # return "she sells sea shells on..."
 end
