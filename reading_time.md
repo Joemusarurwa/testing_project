@@ -18,13 +18,14 @@ Include the name of the method, its parameters, return value, and side effects
 total_time = time_to_read(text)
 return value is the number of words / wpm
 
-**side effect** - what if less than users wpm does it return half minutes or a string informing will take less than a minute?
+**side effect** - what if less than 200 words need to be calculated. does it return half minutes or a string informing will take less than a minute?
 
 estimate reading time based on reading speed of 200 words per minute
 
 **3. Create Example of tests**
 Make a list of examples of what the method will take and return.
 
+- time_to_read("text") => can return the number of words in the string, text
 - time_to_read("text = 200") => 1 this is the expected return value based on 200 wpm  
 - time_to_read("text = 400") => 2 this is the expected return value based on 200 wpm  
 - time_to_read("text = 513") => 2.565 this is the expected return value based on 200 wpm and an odd number of word in the text (this would mean using .to_f method)  
